@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-lkdm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0060-tenant/ci1t-830-0060-app/devfile-sample-lkdm@sha256:96afafeaad1e8f92c7ddc5c1a59ce36f9653a0a9cf70fa582dd03f4a5d6c1e2b
+        name: my-nodejs
+        resources: {}
+status: {}
